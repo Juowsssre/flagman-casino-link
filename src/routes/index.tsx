@@ -3,13 +3,17 @@ import hero from "@/assets/hero.jpg";
 import live from "@/assets/live.jpg";
 
 const LINK = "https://sneket.net/r/iPAt";
-const TITLE = "Flagman Casino — обзор, игры и бонусы на депозит 2026";
+const TITLE = "Флагман Казино (Flagman Casino) — бонус 325% от 1000₽, обзор 2026";
 const DESC =
-  "Полный обзор Flagman Casino: слоты, live-казино, рулетка, crash-игры и бонусы на первые депозиты. Узнайте, как начать играть в Флагман казино.";
+  "Обзор Флагман Казино: 3500+ игр, слоты NetEnt и Pragmatic Play, live-дилеры, рулетка и блэкджек. Получи 325% бонус при пополнении от 1000₽.";
 
 const faq = [
   ["Как начать играть в Flagman Casino?", "Нажмите кнопку «Играть в Flagman Casino», пройдите регистрацию, пополните счёт и выберите игру в лобби."],
-  ["Есть ли бонус за первый депозит?", "Да, новым игрокам доступен приветственный пакет на несколько первых депозитов с бонусными деньгами и фриспинами."],
+  ["Какой бонус даёт Флагман Казино?", "Новые игроки получают 325% бонус при пополнении счёта от 1000₽. Подробные условия отыгрыша указаны на официальном сайте казино."],
+  ["Когда основано Flagman Casino?", "Флагман Казино работает с 2025 года и за это время собрало более 3500 игр, включая эксклюзивные разработки."],
+  ["Какие провайдеры представлены во Флагман Казино?", "В каталоге игры от NetEnt, Microgaming, Play'n GO, Pragmatic Play и других известных студий."],
+  ["Какой RTP у слотов во Flagman?", "Некоторые слоты в каталоге имеют RTP до 97%, что подтверждено независимыми исследованиями."],
+  ["Легально ли работает Флагман Казино?", "Платформа следует международным стандартам лицензирования, защищает личные данные игроков и поддерживает принципы ответственной игры."],
   ["Можно ли играть с телефона?", "Сайт Флагман адаптирован под смартфоны — все слоты и live-столы запускаются прямо в браузере."],
   ["Есть ли демо-режим?", "Большинство слотов можно запустить бесплатно в демо, чтобы изучить механику без риска."],
 ];
@@ -19,7 +23,7 @@ export const Route = createFileRoute("/")({
     meta: [
       { title: TITLE },
       { name: "description", content: DESC },
-      { name: "keywords", content: "Flagman casino, Флагман казино, Flagman бонус, Flagman слоты, казино Флагман регистрация" },
+      { name: "keywords", content: "Флагман казино, Flagman casino, Флагман казино бонус 325%, Flagman слоты, Флагман казино официальный сайт, Флагман казино регистрация, Flagman live казино, Флагман казино отзывы" },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
       { property: "og:type", content: "article" },
@@ -66,11 +70,12 @@ function PlayButton({ big }: { big?: boolean }) {
 
 const chapters = [
   ["01", "Что такое Flagman", "about"],
-  ["02", "Бонусы", "bonus"],
-  ["03", "Игры", "games"],
-  ["04", "Live-казино", "live"],
-  ["05", "Как начать", "start"],
-  ["06", "Вопросы", "faq"],
+  ["02", "Бонус 325%", "bonus"],
+  ["03", "Почему Флагман", "why"],
+  ["04", "Игры", "games"],
+  ["05", "Live-казино", "live"],
+  ["06", "Как начать", "start"],
+  ["07", "Вопросы", "faq"],
 ];
 
 const games = [
@@ -83,10 +88,8 @@ const games = [
 ];
 
 const bonuses = [
-  ["1-й депозит", "100%", "+ фриспины в популярном слоте"],
-  ["2-й депозит", "75%", "бонус к сумме пополнения"],
-  ["3-й депозит", "50%", "+ дополнительные фриспины"],
-  ["Кэшбэк", "до 10%", "еженедельный возврат части проигрышей"],
+  ["Приветственный", "325%", "бонус при пополнении счёта от 1000₽"],
+  ["Минимум", "1000₽", "сумма депозита для активации бонуса"],
 ];
 
 function Index() {
@@ -114,6 +117,9 @@ function Index() {
             <p className="mt-8 max-w-xl text-lg text-muted-foreground">
               Честный гид по казино Флагман: какие игры здесь есть, какие бонусы ждут при депозите и как начать
               играть за пару минут.
+            </p>
+            <p className="mt-6 inline-block border-l-4 border-secondary bg-card/80 px-5 py-3 font-display text-lg font-bold md:text-2xl">
+              Получи <span className="text-gold">325% бонус</span> при пополнении от 1000₽
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <PlayButton big />
@@ -145,8 +151,9 @@ function Index() {
             <Chapter n="01" title="Что такое Flagman Casino" />
             <div className="grid gap-8 text-muted-foreground md:grid-cols-2">
               <p className="text-lg first-letter:float-left first-letter:mr-3 first-letter:font-display first-letter:text-6xl first-letter:font-black first-letter:text-primary">
-                Flagman Casino — онлайн-казино, которое сделало ставку на огромный выбор игр, быстрые выплаты и щедрую
-                бонусную программу. Название говорит само за себя: проект позиционирует себя как флагман среди
+                Флагман Казино (Flagman Casino) по праву считается одним из лидеров онлайн‑гемблинга. С момента основания
+                в 2025 году платформа постоянно развивается и предлагает более 3500 игр, сочетая передовые технологии,
+                надёжность и разнообразие развлечений. Название говорит само за себя: проект позиционирует себя как флагман среди
                 игровых площадок, где каждый найдёт формат по душе.
               </p>
               <p>
@@ -157,7 +164,7 @@ function Index() {
               </p>
             </div>
             <dl className="mt-12 grid grid-cols-2 gap-px overflow-hidden rounded-sm border border-border bg-border md:grid-cols-4">
-              {[["3000+", "игр в лобби"], ["60+", "провайдеров"], ["24/7", "поддержка"], ["5 мин", "регистрация"]].map(([v, l]) => (
+              {[["3500+", "игр в каталоге"], ["2025", "год основания"], ["до 97%", "RTP слотов"], ["325%", "бонус на депозит"]].map(([v, l]) => (
                 <div key={l} className="bg-card p-6">
                   <dt className="font-display text-3xl font-black text-gold">{v}</dt>
                   <dd className="mt-1 text-sm text-muted-foreground">{l}</dd>
@@ -167,10 +174,11 @@ function Index() {
           </section>
 
           <section id="bonus" className="scroll-mt-8">
-            <Chapter n="02" title="Бонусы при депозите" />
+            <Chapter n="02" title="Получи 325% бонус при пополнении от 1000₽" />
             <p className="mb-10 max-w-2xl text-muted-foreground">
-              Новых игроков Flagman встречает приветственным пакетом, который распределён на несколько первых
-              пополнений. Чем раньше вы начнёте, тем больше получите. Ниже — что ждёт вас после регистрации.
+              Флагман Казино встречает новых игроков одним из самых щедрых приветственных предложений на рынке:
+              пополните счёт от 1000₽ и получите бонус 325% к сумме депозита. Например, при пополнении на 1000₽ на
+              балансе окажется значительно больше денег для игры в слоты, рулетку и live-казино.
             </p>
             <div className="space-y-px overflow-hidden rounded-sm border border-border bg-border">
               {bonuses.map(([step, val, note]) => (
@@ -188,8 +196,35 @@ function Index() {
             <div className="mt-8"><PlayButton big /></div>
           </section>
 
+          <section id="why" className="scroll-mt-8">
+            <Chapter n="03" title="Почему стоит выбрать Флагман Казино" />
+            <div className="space-y-12">
+              <article className="grid gap-4 md:grid-cols-[260px_1fr]">
+                <h3 className="text-lg font-bold text-primary">Лицензирование и легальность</h3>
+                <div className="space-y-4 text-muted-foreground"><p>Флагман Казино строго следует международным стандартам лицензирования, что обеспечивает работу в рамках закона и прозрачность. Платформа имеет необходимые лицензии, гарантирующие безопасность игры, понятные условия и честные выплаты.</p><p>Казино контролирует соблюдение правил по защите личных данных игроков и поддерживает принципы ответственной игры.</p></div>
+              </article>
+              <article className="grid gap-4 md:grid-cols-[260px_1fr]">
+                <h3 className="text-lg font-bold text-primary">Разнообразие автоматов</h3>
+                <div className="space-y-4 text-muted-foreground"><p>Каждая игра в каталоге проходит строгий контроль качества. Волатильность слотов варьируется от 30% до 70%, а некоторые модели имеют RTP до 97%, что подтверждено независимыми исследованиями.</p><p>Удобные фильтры сортируют игры по жанру, разработчику и бонусным функциям: классические трёхбарабанные слоты соседствуют с видеослотами с каскадными механиками и многоуровневыми раундами.</p></div>
+              </article>
+              <article className="grid gap-4 md:grid-cols-[260px_1fr]">
+                <h3 className="text-lg font-bold text-primary">Популярные провайдеры</h3>
+                <div className="space-y-4 text-muted-foreground"><p>Среди партнёров Flagman Casino — NetEnt, Microgaming, Play’n GO и Pragmatic Play. Эти студии известны инновационными решениями, потрясающей графикой и тщательно выверенным игровым процессом.</p></div>
+              </article>
+              <article className="grid gap-4 md:grid-cols-[260px_1fr]">
+                <h3 className="text-lg font-bold text-primary">Эксклюзивы и джекпоты</h3>
+                <div className="space-y-4 text-muted-foreground"><p>Помимо хитов, Flagman открывает доступ к редким автоматам и эксклюзивным предложениям, которые регулярно обновляются.</p><p>Слоты с прогрессивными джекпотами дают шанс выиграть крупные суммы, которые растут с каждой ставкой игроков.</p></div>
+              </article>
+              <article className="grid gap-4 md:grid-cols-[260px_1fr]">
+                <h3 className="text-lg font-bold text-primary">Настольные игры</h3>
+                <div className="space-y-4 text-muted-foreground"><p>Рулетка, блэкджек, баккара и покер представлены в нескольких вариациях. Рулетка — в европейской, американской и французской версиях, а в блэкджеке доступны столы с разными лимитами ставок.</p></div>
+              </article>
+            </div>
+            <div className="mt-10"><PlayButton /></div>
+          </section>
+
           <section id="games" className="scroll-mt-8">
-            <Chapter n="03" title="Игры в казино Flagman" />
+            <Chapter n="04" title="Игры в казино Flagman" />
             <p className="mb-10 max-w-2xl text-muted-foreground">
               Главная сила Флагмана — разнообразие. Вот основные категории, с которых стоит начать знакомство.
             </p>
@@ -206,20 +241,22 @@ function Index() {
           </section>
 
           <section id="live" className="scroll-mt-8 pt-10">
-            <Chapter n="04" title="Live-казино: атмосфера настоящего зала" />
+            <Chapter n="05" title="Live-казино: атмосфера настоящего зала" />
             <figure className="relative">
               <img src={live} alt="Живой дилер за столом блэкджека в Flagman Casino" width={1200} height={800} loading="lazy" className="aspect-[16/9] w-full rounded-sm object-cover" />
               <figcaption className="absolute bottom-4 left-4 bg-background/80 px-3 py-1 text-xs uppercase tracking-widest text-primary">Live-блэкджек</figcaption>
             </figure>
             <p className="mt-8 max-w-3xl text-muted-foreground">
-              В разделе live-казино игры ведут реальные дилеры в HD-трансляции. Вы общаетесь в чате, видите каждую
+              Живые игры с дилерами — важная часть предложения Flagman Casino. Платформа использует высококачественное
+              оборудование для трансляций, а видеокачество и интерактивность позволяют почувствовать атмосферу
+              настоящего казино. Игры ведут реальные дилеры в HD. Вы общаетесь в чате, видите каждую
               карту и каждый оборот колеса. Доступны столы с низкими лимитами для новичков и VIP-столы для хайроллеров,
               а также игровые шоу с ведущими, которые превращают каждую ставку в маленькое событие.
             </p>
           </section>
 
           <section id="start" className="scroll-mt-8">
-            <Chapter n="05" title="Как начать играть" />
+            <Chapter n="06" title="Как начать играть" />
             <ol className="grid gap-6 md:grid-cols-4">
               {["Перейдите на сайт Flagman по кнопке", "Зарегистрируйтесь по email или телефону", "Пополните счёт и активируйте бонус", "Выберите игру и наслаждайтесь"].map((s, i) => (
                 <li key={s} className="border-t-2 border-primary pt-4">
@@ -231,7 +268,7 @@ function Index() {
           </section>
 
           <section id="faq" className="scroll-mt-8">
-            <Chapter n="06" title="Частые вопросы" />
+            <Chapter n="07" title="Частые вопросы" />
             <div className="divide-y divide-border border-y border-border">
               {faq.map(([q, a]) => (
                 <details key={q} className="group py-5">
